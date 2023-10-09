@@ -108,7 +108,7 @@
   --footer-section-text-color: var(--white);
   --footer-section-ahref-color: var(--white);
   --footer-section-ahref-hover-color: var(--white);
-  --footer-icon-color: var(--secondary);
+  --footer-icon-color: var(--primary);
 
   /* Primary Overlay Section */
   --primary-overlay-bg-color: rgba(26, 82, 0, 0.5);
