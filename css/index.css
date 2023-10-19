@@ -586,6 +586,7 @@ nav ul .nav-item .dropdown-item {
   border-radius: 20px;
   overflow: hidden;
   transition: all ease 0.5s;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .services .service-grid .service:hover {
