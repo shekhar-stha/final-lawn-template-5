@@ -25,127 +25,83 @@
 </head>
 
 <body>
-    <!-- Navabr and Hero Section -->
-    <section class="nav-hero inner-page position-relative" style="overflow: visible !important; overflow-x: hidden;">
-        <!-- Upper Navbar -->
-        <div class="top-information-div">
-            <div class="container">
-                <div class="top-information" data-aos="fade-down">
-                    <div class="d-md-block d-none">
-                        <a title="Location" href="#">
-                            <i class="fa-solid fa-location-dot text-primary pe-2"></i> Location
-                        </a>
-                    </div>
-                    <div class="d-xl-block d-none">
-                        <a title="Homepage Navigation" href="/index.html"><img class="logo" src="/img/logo.png"
-                                alt="Top Logo"></a>
-                    </div>
-                    <div>
-                        <a title="Phone Number" href="tel:+11111111111">
-                            <i class="fa-solid fa-phone-volume text-primary pe-2"></i> +1 (111) 111-1111
-                        </a>
-                    </div>
-                </div>
-            </div>
+  <!-- Navbar and Hero Section -->
+  <section class="nav-hero inner-page position-relative" style="overflow: visible !important; overflow-x: hidden;">
+    <!-- Top of the navbar -->
+    <div class="top-information" data-aos="fade-up">
+        <div class="container py-3 d-flex flex-vm-row flex-column justify-content-between align-items-center">
+            <a href="/index.html#serviceAreas" title="location" class="text-white fw-500">
+                <i class="fa-solid fa-location-dot"></i>Austin, Texas
+            </a>
+
+            <a title="Phone Number" href="tel:+17372070337" class="text-white fw-500 mt-vm-0 mt-1">
+                <i class="fa-solid fa-phone"></i> +1 (737) 207-0337</a>
         </div>
+    </div>
 
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-xl navbar-dark" data-aos="fade-down">
-            <div class="container">
-                <!-- Logo Section (visible on extra large screens) -->
-                <div class="logo-section d-xl-none d-inline">
-                    <a title="Logo Navigation" href="/index.html"><img class="logo" src="/img/logo.png"
-                            alt="Logo Image"></a>
-                </div>
-                <!-- Navbar Toggler for mobile -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">
-                    <i class="fa-solid fa-bars text-dark"></i>
-                </button>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-xl navbar-dark " data-aos="fade-up">
+        <div class="container">
+            <a title="Homepage" class="navbar-brand" href="/index.html"><img class="logo" src="/img/logo.png"
+                    alt="Navbar Transparent Logo"></a>
 
-                <!-- Offcanvas for mobile -->
-                <div class="offcanvas-xl offcanvas-end w-100" tabindex="-1" id="offcanvasResponsive"
-                    aria-labelledby="offcanvasResponsiveLabel">
-                    <div class="offcanvas-header bg-dark">
-                        <!-- Logo Section (visible on extra large screens, within offcanvas) -->
-                        <div class="logo-section mb-0 d-xl-none d-inline">
-                            <a title="Homepage Navigation" href="/index.html"><img class="logo" src="/img/logo.png"
-                                    alt="Canvas Logo"></a>
-                        </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                        <!-- Close Button for offcanvas -->
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                            data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
-                    </div>
-
-                    <!-- Offcanvas Body (contains the navigation) -->
-                    <div class="offcanvas-body w-100">
-                        <!-- Navbar Nav -->
-                        <ul class="navbar-nav w-100 mb-2 mb-lg-0">
-                            <!-- First Navigation -->
-                            <li class="nav-item">
-                                <a class="nav-link" title="Navigation Item 1" href="#">Navigation Item 1</a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a title="Home" class="nav-link ms-0" aria-current="page" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a title="Dropdown" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown 1
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a title="Sub 1" class="dropdown-item" href="#">Sub 1</a>
                             </li>
-                            <!-- Second Navigation -->
-                            <li class="nav-item">
-                                <a class="nav-link" title="Navigation Item 2" href="#">Navigation Item 2</a>
-                            </li>
-                            <!-- Third Navigation -->
-                            <li class="nav-item">
-                                <a class="nav-link" title="Navigation Item 3" href="#">Navigation Item 3</a>
-                            </li>
-                            <!-- Fourth Navigation -->
-                            <li class="nav-item">
-                                <a class="nav-link" title="Navigation Item 4" href="#">Navigation Item 4</a>
-                            </li>
-                            <!-- Fifth Navigation -->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Dropdown Item
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a title="Sub Item 1" class="dropdown-item" href="#">Sub Item 1</a>
-                                    </li>
-                                    <li>
-                                        <a title="Sub Item 2" class="dropdown-item" href="#">Sub Item 2</a>
-                                    </li>
-                                </ul>
+                            <li><a title="Sub 2" class="dropdown-item" href="#">Sub 2</a>
                             </li>
 
                         </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a title="Navigation" class="nav-link" href="/">Navigation </a>
+                    </li>
+                    <li class="nav-item">
+                        <a title="Contact Page" class="nav-link" href="/contact.html">Contact</a>
+                    </li>
+                </ul>
 
-                        <!-- Call Now Button (visible on extra large screens, within offcanvas) -->
-                        <a title="Call Now"
-                            class="btn btn-primary d-xl-none d-flex justify-content-center col-12 mt-4 fs-17 text-uppercase py-3"
-                            href="tel:+11111111111">
-                            Call Now
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!-- /Container -->
-        </nav>
-        <!-- /Navbar -->
-
-
-        <!-- Hero Section -->
-        <div class="hero" data-aos="fade-down">
-            <!-- Container for Hero Content -->
-            <div class="container hero-content py-3 pb-5">
-                <!-- Main Heading -->
-                <h1 class="text-center">Inner Page</h1>
-
+                <a title="Free Estimate CTA"
+                    class="nav-button btn btn-primary rounded-pill fw-500 text-white px-xxl-5 px-4 fs-19 text-white"
+                    href="/cta.html">
+                    Call Now</a>
             </div>
         </div>
-        <!-- /Hero Section -->
+    </nav>
+    <!-- Navbar Closed -->
 
 
-        <!-- Background Image behind hero sections -->
-        <img class="hero-img" src="/img/hero-bg.jpg" alt="Hero background Image">
-    </section>
+    <!-- Hero Section -->
+    <div class="hero" data-aos="fade-down">
+        <!-- Container for Hero Content -->
+        <div class="container hero-content py-3 pb-5">
+            <!-- Main Heading -->
+            <h1 class="text-center">Inner Page</h1>
 
+        </div>
+    </div>
+    <!-- /Hero Section -->
+
+
+    <!-- Background Image behind hero sections -->
+    <img class="hero-img" src="/img/hero-bg.jpg" alt="Hero background Image">
+</section>
 
     <!-- About -->
     <section id="about" class="about-us about-us-main light-section mt-5 pt-4" data-aos="fade-up">

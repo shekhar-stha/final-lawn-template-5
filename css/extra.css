@@ -15534,10 +15534,6 @@ section {
   height: auto !important;
 }
 
-.inner-page nav {
-  border-bottom: 2px solid #292929;
-}
-
 .inner-page .hero-img {
   filter: brightness(60%);
 }

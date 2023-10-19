@@ -25,147 +25,90 @@
 </head>
 
 <body>
-    <!-- Navabr and Hero Section -->
-    <section class="nav-hero position-relative" style="overflow: visible !important; overflow-x: hidden;">
-        <!-- Upper Navbar -->
-        <div class="top-information-div">
-            <div class="container">
-                <div class="top-information" data-aos="fade-down">
-                    <div class="d-md-block d-none">
-                        <a title="Location text-xl-dark" href="#">
-                            <i class="fa-solid fa-location-dot pe-2"></i> Location
-                        </a>
-                    </div>
-                    <div class="d-xl-block d-none">
-                        <a title="Homepage Navigation" href="/index.html"><img class="logo" src="/img/logo.png"
-                                alt="Top Logo"></a>
-                    </div>
-                    <div>
-                        <a title="Phone Number" href="tel:+11111111111">
-                            <i class="fa-solid fa-phone-volume pe-2"></i> +1 (111) 111-1111
-                        </a>
-                    </div>
-                </div>
+    <!-- Navbar -->
+    <section class="nav-hero">
+        <!-- Top of the navbar -->
+        <div class="top-information" data-aos="fade-up">
+            <div class="container py-3 d-flex flex-vm-row flex-column justify-content-between align-items-center">
+                <a href="/index.html#serviceAreas" title="location" class="text-white fw-500">
+                    <i class="fa-solid fa-location-dot"></i>Austin, Texas
+                </a>
+
+                <a title="Phone Number" href="tel:+17372070337" class="text-white fw-500 mt-vm-0 mt-1">
+                    <i class="fa-solid fa-phone"></i> +1 (737) 207-0337</a>
             </div>
         </div>
 
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-xl navbar-dark" data-aos="fade-down">
+        <nav class="navbar navbar-expand-xl navbar-dark " data-aos="fade-up">
             <div class="container">
-                <!-- Logo Section (visible on extra large screens) -->
-                <div class="logo-section d-xl-none d-inline">
-                    <a title="Logo Navigation" href="/index.html"><img class="logo" src="/img/logo.png"
-                            alt="Logo Image"></a>
-                </div>
-                <!-- Navbar Toggler for mobile -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive">
-                    <i class="fa-solid fa-bars text-dark"></i>
+                <a title="Homepage" class="navbar-brand" href="/index.html"><img class="logo" src="/img/logo.png"
+                        alt="Navbar Transparent Logo"></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <!-- Offcanvas for mobile -->
-                <div class="offcanvas-xl offcanvas-end w-100" tabindex="-1" id="offcanvasResponsive"
-                    aria-labelledby="offcanvasResponsiveLabel">
-                    <div class="offcanvas-header bg-dark">
-                        <!-- Logo Section (visible on extra large screens, within offcanvas) -->
-                        <div class="logo-section mb-0 d-xl-none d-inline">
-                            <a title="Homepage Navigation" href="/index.html"><img class="logo" src="/img/logo.png"
-                                    alt="Canvas Logo"></a>
-                        </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a title="Home" class="nav-link ms-0" aria-current="page" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a title="Dropdown" class="nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown 1
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a title="Sub 1" class="dropdown-item" href="#">Sub 1</a>
+                                </li>
+                                <li><a title="Sub 2" class="dropdown-item" href="#">Sub 2</a>
+                                </li>
 
-                        <!-- Close Button for offcanvas -->
-                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                            data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
-                    </div>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a title="Navigation" class="nav-link" href="/">Navigation </a>
+                        </li>
+                        <li class="nav-item">
+                            <a title="Contact Page" class="nav-link" href="/contact.html">Contact</a>
+                        </li>
+                    </ul>
 
-                    <!-- Offcanvas Body (contains the navigation) -->
-                    <div class="offcanvas-body w-100">
-                        <!-- Navbar Nav -->
-                        <ul class="navbar-nav w-100 mb-2 mb-lg-0">
-                            <!-- First Navigation -->
-                            <li class="nav-item">
-                                <a class="nav-link" title="Navigation Item 1" href="#">Navigation Item 1</a>
-                            </li>
-                            <!-- Second Navigation -->
-                            <li class="nav-item">
-                                <a class="nav-link" title="Navigation Item 2" href="#">Navigation Item 2</a>
-                            </li>
-                            <!-- Third Navigation -->
-                            <li class="nav-item">
-                                <a class="nav-link" title="Navigation Item 3" href="#">Navigation Item 3</a>
-                            </li>
-                            <!-- Fourth Navigation -->
-                            <li class="nav-item">
-                                <a class="nav-link" title="Navigation Item 4" href="#">Navigation Item 4</a>
-                            </li>
-                            <!-- Fifth Navigation -->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Dropdown Item
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a title="Sub Item 1" class="dropdown-item" href="#">Sub Item 1</a>
-                                    </li>
-                                    <li>
-                                        <a title="Sub Item 2" class="dropdown-item" href="#">Sub Item 2</a>
-                                    </li>
-                                </ul>
-                            </li>
-
-                        </ul>
-
-                        <!-- Call Now Button (visible on extra large screens, within offcanvas) -->
-                        <a title="Call Now"
-                            class="btn btn-primary d-xl-none d-flex justify-content-center col-12 mt-4 fs-17 text-uppercase py-3"
-                            href="tel:+11111111111">
-                            Call Now
-                        </a>
-                    </div>
+                    <a title="Free Estimate CTA"
+                        class="nav-button btn btn-primary rounded-pill fw-500 text-white px-xxl-5 px-4 fs-19 text-white"
+                        href="/cta.html">
+                        Call Now</a>
                 </div>
             </div>
-            <!-- /Container -->
         </nav>
-        <!-- /Navbar -->
-
 
         <!-- Hero Section -->
-        <div class="hero" data-aos="fade-down">
-            <!-- Container for Hero Content -->
-            <div class="container hero-content">
-                <div class="additional-header-info ">
-                    <p>Commercial & Residential Services</p>
-                </div>
-                <!-- Main Heading -->
-                <h1 class="text-center">Providing the best <span>Lawn Services</span> in <span> Your Location</span>
-                </h1>
+        <div class="hero" data-aos="zoom-in">
+            <div class="container h-100">
+                <div class="d-flex flex-column justify-content-center h-100 hero-content">
+                    <h1 class="mb-4">Delivering Top-Notch <span>Lawn</span>
+                        Services in <span>Austin, Texas</span></h1>
+                    <p class="hero-info">
+                        Transforming Austin, Texas Properties into Lush, Healthy, and
+                        Enchanting
+                        Landscapes through Tailored Lawn Care Solutions
+                    </p>
 
-                <!-- Hero Information -->
-                <p class="hero-info">Expert Lawn Care and Landscaping Services for Your Home or Business. Keep Your
-                    Property Beautiful and Safe! Call Today for free estimate</p>
+                    <div class="d-flex flex-vm-row flex-column justify-content-center mt-md-5 mt-3 pt-3 pb-lg-0 pb-3">
+                        <a title="Free Quote Navigation" href="/cta.html"
+                            class="btn btn-primary text-white rounded-pill px-4">Get Free Quote</a>
 
-                <!-- Call to Action Buttons -->
-                <div class="d-flex mt-lg-5 mt-4 justify-content-center">
-                    <div class="mt-2 text-center d-flex flex-sm-row flex-column">
-                        <!-- Call Now Button -->
-                        <a title="Call Now to Learn More"
-                            class="btn btn-primary rounded-1 fs-19 text-uppercase px-5 fw-600 me-sm-4 mb-sm-0 mb-4"
-                            href="tel:+11111111111">Call Now</a>
-
-                        <!-- Secondary Button -->
-                        <a title="Second CTA" class="btn btn-secondary rounded-1 fs-19 text-uppercase px-5 fw-600"
-                            href="#">Second
-                            CTA</a>
+                        <a title="Contact Us Navigation" href="/contact.html"
+                            class="btn btn-secondary ms-vm-4 mt-vm-0 mt-3 px-sm-5 px-4 rounded-pill border-2 fw-500">Contact
+                            Us</a>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- /Hero Section -->
-
-
-        <!-- Background Image behind hero sections -->
-        <img class="hero-img" src="/img/hero-bg.jpg" alt="Hero background Image">
+        <img class="hero-img" src="/img/hero-bg.jpg" alt="hero img">
     </section>
 
 
@@ -636,7 +579,8 @@
 
     <!-- Service Areas -->
     <section class="service-areas position-relative py-5 primary-overlay" id="service-areas">
-        <img style="object-position: 80% 50%;" class="bg-img" src="/img/service-areas-bg.jpeg" alt="aerial-view-lawn-mowing">
+        <img style="object-position: 80% 50%;" class="bg-img" src="/img/service-areas-bg.jpeg"
+            alt="aerial-view-lawn-mowing">
         <div class="container" data-aos="fade-up">
             <div class="">
                 <p class="sub-header-center text-center text-white">
@@ -765,8 +709,8 @@
                         </p>
 
                         <!-- Facebook -->
-                        <a title="Facebook Navigation" class=" d-flex align-items-center justify-content-lg-end link" target="_blank"
-                            href="#"><i class="fs-22 fa-brands fa-facebook me-3"></i> Facebook</a>
+                        <a title="Facebook Navigation" class=" d-flex align-items-center justify-content-lg-end link"
+                            target="_blank" href="#"><i class="fs-22 fa-brands fa-facebook me-3"></i> Facebook</a>
 
                     </div>
                 </div>
